@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <title>WeatherApp</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="header">
+            <span class="first">Right now in</span>
+            <input class="searchbar" id="searchbar" type="text" spellcheck="false" autofocus />
+            <span class="measure"></span>
+        </div>
+
+        <div class="main">
+            <div class="weathericon">icon</div>
+            <div class="temperature">
+                <div class="temp-degrees">12</div>
+                <div class="temp-unit">&#176C</div>
+            </div>
+        </div>
+
+        <div class="others">
+            <div class="wind">
+                <img class="image" src="resources/icons/wind.gif">
+                <div class="headline">WIND</div>
+                <div class="aboutWind">Windy</div>
+            </div>
+            <div class="humidity">
+                <img class="image" src="resources/icons/humidity.gif">
+                <div class="headline">HUMIDITY</div>
+                <div class="aboutHumidity">Humid</div>
+            </div>
+            <div class="aqi">
+                <img class="image" src="resources/icons/radar.gif">
+                <div class="headline">AQI</div>
+                <div class="aboutAqi">10</div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 12vh;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchbar,
+.measure {
+    padding: 0 8px;
+    font-size: 2.3rem;
+    font-family: Montserrat;
+    white-space: pre; /* white-spaces will work effectively */
+    border: none;
+}
+
+.searchbar {
+    border-bottom: 2px solid black;
+    margin: 0 10px;
+}
+
+.measure {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    margin-left: 20%;
+    margin-right: 30%;
+}
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.temp-degrees {
+    font-size: 100px;
+}
+.temp-unit {
+    font-size: 40px;
+    position: absolute;
+    bottom: 15%;
+    left: 100%;
+}
+
+.others {
+    display: flex;
+    flex: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    margin: 0 16%;
+}
+
+.headline {
+    font-weight: 600;
+}
+
+.wind,
+.humidity,
+.aqi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 80px;
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 10vh 0;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .others {
+        margin: 0 8%;
+    }
+    .image {
+        width: 60px;
+    }
+    .bigicon {
+        width: 180%;
+        height: 180%;
+    }
+    .main {
+        margin-left: 5%;
+        margin-right: 25%;
+    }
+}
+
+.bigicon {
+    width: 100%;
+    height: 100%;
+}
