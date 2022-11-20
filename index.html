@@ -13,36 +13,40 @@
     </head>
     <body>
         <div class="header">
-            <span class="first">Right now in</span>
-            <input class="searchbar" id="searchbar" type="text" spellcheck="false" autofocus />
-            <span class="measure"></span>
-        </div>
-
-        <div class="main">
-            <div class="weathericon">icon</div>
-            <div class="temperature">
-                <div class="temp-degrees">12</div>
-                <div class="temp-unit">&#176C</div>
+            <span class="first">Right now in</span> 
+            <div class="control">
+                <input class="searchbar" id="searchbar" placeholder="here" type="text" spellcheck="false" style="text-transform: capitalize;" autofocus />
+                <span class="measure"></span>
             </div>
         </div>
-
+        <div class="main">
+            <div class="weathericon">Enter a city first!</div>
+            <div class="temperature">
+                <div class="temp-degrees">?</div>
+                <div class="temp-unit">&#176C</div>
+            </div>
+            
+        </div>
+        
         <div class="others">
             <div class="wind">
                 <img class="image" src="resources/icons/wind.gif">
                 <div class="headline">WIND</div>
-                <div class="aboutWind">Windy</div>
+                <div class="aboutWind">-/-</div>
             </div>
             <div class="humidity">
                 <img class="image" src="resources/icons/humidity.gif">
                 <div class="headline">HUMIDITY</div>
-                <div class="aboutHumidity">Humid</div>
+                <div class="aboutHumidity">-/-</div>
             </div>
             <div class="aqi">
                 <img class="image" src="resources/icons/radar.gif">
                 <div class="headline">AQI</div>
-                <div class="aboutAqi">10</div>
+                <div class="aboutAqi">-/-</div>
             </div>
         </div>
+        <input type="checkbox" name="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox"></label>
         <script src="app.js"></script>
         
     </body>
